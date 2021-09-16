@@ -1,8 +1,7 @@
 # LAB 4
 ## _Les points à voir :_
 
-- Navigation
-- Rédirection
+- Navigation et routing
 
 <br/>
 

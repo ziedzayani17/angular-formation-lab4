@@ -1,0 +1,51 @@
+<div style="margin-top: 20px;margin-left: auto;margin-right: auto;width: 50%;" class="ui teal segment">
+    <a class="ui red ribbon label" (click)="sendEvent()">{{ movie.name | uppercase}}</a>
+    <span><strong>{{ movie.category }} </strong></span>
+<div  class="four wide column center aligned votes">
+    <div style="margin: 2em;" class="ui teal circular segment">
+        <div class="value">
+            {{ movie.upVote - movie.downVote | number}}
+        </div>
+        <div class="label">
+            Points
+        </div>
+    </div>
+    
+    <div class="twelve wide column">
+        <span class="ui large header">
+        Description :   
+        </span><p>{{ movie.description }}</p>
+      <!--  <h5 class="ui header">Date sortie : {{ movie.releaseDate | date:'yyyy-mm-dd'}}</h5> -->
+      <h5 class="ui header">Date sortie : {{ movie.releaseDate }}</h5>
+
+        <div class="ui success message" *ngIf="(movie.upVote - movie.downVote) >= 2000" >
+            <i class="close icon"></i>
+            <div class="header">
+              Film récommandé.
+            </div>
+            <p>Ce film dépasse le score de 2000 points</p>
+          </div>
+
+
+        <div style="float: right;">
+            <div  class="ui labeled button" tabindex="0">
+                <div class="ui primary button"  (click)="voteUp()" >
+                <i class="hand point up icon"></i> J'aime
+                </div>
+                <a class="ui basic label">
+                {{ movie.upVote }}
+                </a>
+            </div>
+
+            <div class="ui labeled button" tabindex="0">
+                <div class="ui secondary button" (click)="voteDown()">
+                <i class="hand point down icon"></i> Je n'aime pas
+                </div>
+                <a class="ui basic label">
+                <p [textContent]="movie.downVote"></p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+</div>

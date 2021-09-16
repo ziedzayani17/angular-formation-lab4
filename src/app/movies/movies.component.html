@@ -1,0 +1,12 @@
+<div class="ui grid">
+<app-movie style="width: 100%;" *ngFor="let item of movies" [movie]="item" (myFirstEventEmitter)="addItem($event)" ></app-movie>
+</div>
+<div style="margin: 50px;padding: 25px;" class="ui info message" *ngIf="items.length > 0">
+    <i class="close icon"></i>
+    <div class="header">
+      Voici les événements envoyés par les composants fils
+    </div>
+    <ul class="list">
+      <li *ngFor="let item of items" >{{ item }}</li>
+    </ul>
+  </div>

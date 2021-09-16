@@ -270,6 +270,10 @@ onstructor(public authService: AuthService) { }
 
 <br>
 
+```js
+{ path: 'login', component: LoginComponent },
+```
+
 <br>
 
 ### 7.5 Créer un Guard de type CanActivate (créer un service dans le répertoire */src/app/services/impl*)

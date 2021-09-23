@@ -7,7 +7,7 @@
 
 ## _prérequis :_
 
-- Récuperer le code du LAB1 (https://github.com/ziedzayani17/angular-formation-lab3.git)
+- Récuperer le code du LAB3 (https://github.com/ziedzayani17/angular-formation-lab3.git)
 
 <br/>
 <br/>

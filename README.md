@@ -21,7 +21,7 @@ ng generate component contact
 <br/>
 <br/>
   
-### 2. Créer un fichier *app.routes.ts* dans le répertoire *src/app/routes* et ajouter un tableau représentant la configuration des routes
+### 2. Créer un fichier *app.routes.ts* dans le répertoire *src/app/routes* et ajouter un tableau représentant la configuration des routes (LazyLoading à voir dans les autres labs)
 
 <br/>
 <br/>
